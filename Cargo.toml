@@ -1,0 +1,34 @@
+[package]
+name = "locale_ly"
+version = "0.1.0"
+edition = "2021"
+
+default-run = "lcly-cli"
+
+[dependencies]
+cli = { path = "cli" }
+
+
+[workspace]
+members = [
+    # The lingual package contains information for translation
+    "lingual",
+    # the core package includes information necessary for the core functionality of the application
+    "core",
+    # all macros are defined in the macros package
+    # "macros",
+    # The cli package contains the command line interface commands
+    "cli",
+    # The gui package contains the graphical user interface for desktop application
+    "desktop"
+]
+resolver = "2"
+
+
+
+# [[bin]]
+# name = "lcly-cli"
+
+
+# [[bin]]
+# name = "lcly-desktop"
