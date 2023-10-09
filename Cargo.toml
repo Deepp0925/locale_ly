@@ -15,6 +15,9 @@ members = [
     "lingual",
     # the core package includes information necessary for the core functionality of the application
     "core",
+    # All erros will be encapsulated in the errors package, this is because it can be 
+    # shared among all the other crates
+    "errors",
     # all macros are defined in the macros package
     # "macros",
     # The cli package contains the command line interface commands
